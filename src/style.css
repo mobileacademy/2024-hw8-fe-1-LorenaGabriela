@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 30px;
+    background-color: #c799f4;
+    margin-top: 40px;
+}
+
+#game-settings {
+    margin-bottom: 40px; 
+}
+
+#game-board {
+    display: grid;
+    grid-gap: 2px; 
+    margin-top: 25px;}
+
+.cell {
+    width: 20px; 
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4c234f;
+    border: 1px solid #999;
+    cursor: pointer;
+    font-size: 24px; }
+
+.cell.revealed {
+    background-color: #f699ce;
+    cursor: default;
+}
+
+.cell.flagged {
+    background-color: #ffcc00;
+}
